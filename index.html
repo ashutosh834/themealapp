@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        startinggithub
-    </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Meal App Document</title>
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/ecf354958f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link to css -->
+    <link type="text/css" rel="stylesheet" href="meal.css" />
+  </head>
+
+  <body>
+    <section>
+      <div id="container">
+        <h1 id="title">Hey! Foodie</h1>
+        <a id="favourite" href="favourite.html">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+        <!-- meal search box -->
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="search" placeholder="Search for a meal.." />
+          <button type="button"><i class="fa-solid fa-microphone"></i></button>
+        </form>
+        <!-- meal search result -->
+        <div class="search-result">
+                <!-- <div class="item">
+                    <div class="img">
+                     <img src= "img1.jpeg">
+                    </div>
+                  <div class="btns">
+                     <a href="#">Get the Receipe</a>
+                     <button type="submit">Add to Favourite</button>
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="img"><img src= "img1.jpeg">
+                    </div>
+                    <div class="btns">
+                    <a href="#">Get the Receipe</a>
+                    <button type="submit">Add to Favourite</button>
+                    </div>
+                </div>      -->
+
+ 
+        </div>
+
+        <!-- meal detail -->
+        <div id="meal-details">
+          <button id="back-button">
+            <i class="fa-sharp fa-solid fa-circle-left"></i> &nbsp; Back
+          </button>
+          <div id="meal-details-container"></div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="meal.js"></script>
+  </body>
 </html>

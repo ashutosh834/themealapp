@@ -1,0 +1,216 @@
+/* basic structure of home page */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Nunito";
+  font-size: 12px;
+}
+section {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #222229;
+}
+#container {
+  width: 90%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* title of our app */
+#title {
+  color: rgb(206, 9, 9);
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 4rem;
+}
+/* heart shape icon */
+#favourite {
+  position: absolute;
+  top: 42px;
+  right: 63px;
+  font-size: 4rem;
+  color: rgb(241, 7, 54);
+}
+/*meal search box */
+form {
+  position: relative;
+  width: 90%;
+  max-width: 550px;
+  margin: 40px auto;
+  background-color: rgb(241, 246, 251);
+  border-radius: 24px;
+}
+form input {
+  width: 85%;
+  padding: 14px;
+  display: inline-block;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+/* ..search icon.... */
+form i {
+  width: 6%;
+  font-size: 2rem;
+  margin-left: 10px;
+  color: rgb(199, 10, 10);
+  padding-right: 5px;
+}
+/* ..mic assistant logo.. */
+form button {
+  position: absolute;
+  top: 15px;
+  right: 12px;
+  width: 4%;
+  margin-right: 12px;
+  border: none;
+  border-left: 1px solid rgb(75, 59, 59);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* arranging meals div */
+.search-result,
+#fav-meal-container {
+  margin-top: 80px;
+  width: 100%;
+  display: grid;
+  gap: 35px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item {
+  width: 100%;
+  max-width: 400px;
+  background-color:rgb(106, 105, 105);
+  border-radius: 48px;
+  overflow: hidden;
+}
+.item:hover{
+  background-color: rgb(45, 35, 8);
+  border: 3px dotted rgb(154, 75, 75);
+}
+.item .img {
+  height: 330px;
+}
+.item .meal-name{
+  color: rgb(186, 182, 111);
+  text-align: center;
+  font-size: 3rem;
+}
+.item .btns{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.recipe {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(8, 12, 12);
+  background-color: #b9661d;
+  margin: 20px;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius: 10px 6px;
+}
+.fav{
+  margin: 20px;
+  background-color: rgb(160, 64, 12);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius: 10px 6px;
+}
+.fav:active {
+  background-color: black;
+  color: rgb(154, 75, 75);
+}
+.recipe:active {
+    color: rgb(158, 106, 39);
+    background-color: black;
+}
+/* ..recipe container.. */
+#meal-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 10px;
+  width: 45%;
+  height: 90%;
+  overflow-y: scroll;
+  display: none;
+  background-color: rgb(33, 37, 41);
+  padding: 20px;
+}
+.show-recipe {
+  /* important used here to display the details page */
+  display: block !important;
+}
+#back-button {
+  margin-bottom: 20px;
+  color: rgb(22, 20, 8);
+}
+.recipe-title {
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+.recipe-instructions {
+  color: rgb(76, 191, 153);
+  font-size: 1.2rem;
+}
+.recipe-meal-img img {
+  width: 100%;
+  height: 100%;
+  margin: 10px auto;
+  display: block;
+  object-fit: contain;
+}
+.recipe-link {
+  margin: 1.4rem 0;
+  text-align: center;
+}
+.recipe-link a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.recipe-link a:hover {
+  color: red;
+}
+/*..Favourite container..*/
+.unfavourite-button {
+  background-color: rgb(119, 61, 61);
+  color: rgb(214, 204, 204);
+  margin: 5% 12rem;
+  font-size: 1.4rem;
+  padding: 7px;
+}
+#back1-button {
+  font-size: 2rem;
+  text-decoration: none;
+  color: antiquewhite;
+  background-color: #222229;
+  margin: 20px;
+  padding: 10px;
+}
